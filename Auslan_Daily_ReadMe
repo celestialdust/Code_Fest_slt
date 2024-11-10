@@ -1,0 +1,21 @@
+Requirements:
+- Create a conda or python virtual environment.
+- Install required packages using the requirements.txt file.
+    pip install -r requirements.txt
+
+Configs:
+feature: RGB / [ "hands", "body", "face" ]
+seq2seq architecture: rnn / transformer
+
+Usage:
+CUDA_VISIBLE_DEVICES=1
+
+python -m signjoey train configs/xxx.yaml
+
+python -m signjoey test configs/xxx.yaml
+
+python -m signjoey translate configs/xxx.yaml
+
+python BLEU.py
+
+
